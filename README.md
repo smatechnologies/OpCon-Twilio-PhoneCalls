@@ -27,7 +27,7 @@ The Account SID and Authorization token are shown on the home page. Click on the
 ![TwilioPhone](/img/TwilioNumber.png)
 
 # Instructions
-After you have recorded the necessary Twilio information, you can start configuring script below.
+After you have recorded the necessary Twilio information, you can start configuring the OpCon process below.
 
 ## OpCon Job Setup <a name="JobSetup"></a>
 These notifications will be managed by an OpCon Schedule with on-demand multi-instance Jobs which will trigger the phone calls. Notification Manager will be setup to "Send OpCon/xps Events" adding the on-demand Jobs to the Schedule.
@@ -37,11 +37,11 @@ An OpCon Schedule will be built to manage the phone alerts. There will be a mini
 
 #### Schedule Details <a name="ScheduleDetails"></a>
 * Schedule Name "OnCall Alerts"
-	* Start Time 00:00
-	* Mark all days in the "Workays per Week"
-	* Uncheck Use Master Holiday
-	* Auto Build 0 days in advance for 2 days.
-	* Auto Delete - use your company's standards.
+	* **bold**Start Time**bold** 00:00
+	* Mark all days in the *bold*Workays per Week*bold*
+	* Uncheck *bold*Use Master Holiday*bold*
+	* *bold*Auto Build*bold* 0 days in advance for 2 days.
+	* *bold*Auto Delete*bold* - use your company's standards.
 
 #### Job Details <a name="JobDetails"></a>
 * Job Name "Keep Schedule Open"
