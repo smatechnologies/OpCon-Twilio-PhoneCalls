@@ -36,7 +36,7 @@ These notifications will be managed by an OpCon Schedule with on-demand multi-in
 An OpCon Schedule will be built to manage the phone alerts. There will be a minimum two Jobs in this Schedule (additional configuration is required to set up escalating calls).
 
 #### Schedule Details <a name="ScheduleDetails"></a>
-* ***Schedule Name*** "OnCall Alerts"
+* _**Schedule Name**_ "OnCall Alerts"
 	* **Start Time** 00:00
 	* Mark all days in the **Workays per Week**
 	* Uncheck **Use Master Holiday**
@@ -44,18 +44,18 @@ An OpCon Schedule will be built to manage the phone alerts. There will be a mini
 	* **Auto Delete** - use your company's standards.
 
 #### Job Details <a name="JobDetails"></a>
-* ***Job Name*** "Keep Schedule Open"
-	* Null Job Type
-	* Frequency - select a Frequency which allows the Job to run every day of the year.
-	* Start Offset - 24:00
+* _**Job Name**_ "Keep Schedule Open"
+	* Null **Job Type**
+	* **Frequency** select a Frequency which allows the Job to run every day of the year.
+	* **Start Offset** 24:00
 	* This Job make sure the Schedule is built every day and the Schedule is open allowing on-demand Jobs to be added.
-* ***Job Name*** "Call Level One"
-	* Windows Job Type
-	* Check the Allow Multi-Instance checkbox
-	* Select a Primary Machine which supported Embedded Scripts
-	* Select the desired User Account
-	* Select the appropriate embedded script
-	* Select the PowerShell runner
+* _**Job Name**_ "Call Level One"
+	* Windows **Job Type**
+	* Check the **Allow Multi-Instance** checkbox
+	* Select a **Primary Machine** which supported **Embedded Scripts**
+	* Select the desired **User Account**
+	* Select the appropriate **Embedded Script**
+	* Select the **PowerShell** runner
 	* Enter the following Arguments:
 
 ```
@@ -65,10 +65,10 @@ An OpCon Schedule will be built to manage the phone alerts. There will be a mini
 ![JobCommand](/img/JobCommandLine.png)
 
 *
-	* Frequency - an OnRequest frequency which will only be built when called by an event
-	* Run Intervale (these settings should be customized based on your preference)
-		* Minutes from Start to Start 15
-		* Number of Runs 5
+	* **Frequency** an OnRequest frequency which will only be built when called by an event
+	* **Run Interval** (these settings should be customized based on your preference)
+		* Minutes from *Start to Start* 15
+		* *Number of Runs* 5
 
 #### Notification Manager Details <a name="NotificationDetails"></a>
 OpCon's Notification Manager does not come with a phone call option. For this solution to work you need to use the "Send OpCon/xps Event" notification type adding the "Call Level One" Job to the "OnCall Alerts" Schedule. 
