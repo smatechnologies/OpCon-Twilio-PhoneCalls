@@ -37,11 +37,11 @@ An OpCon Schedule will be built to manage the phone alerts. There will be a mini
 
 #### Schedule Details <a name="ScheduleDetails"></a>
 * Schedule Name "OnCall Alerts"
-	* **bold**Start Time**bold** 00:00
-	* Mark all days in the *bold*Workays per Week*bold*
-	* Uncheck *bold*Use Master Holiday*bold*
-	* *bold*Auto Build*bold* 0 days in advance for 2 days.
-	* *bold*Auto Delete*bold* - use your company's standards.
+	* **Start Time** 00:00
+	* Mark all days in the *Workays per Week*
+	* Uncheck *Use Master Holiday*
+	* *Auto Build* 0 days in advance for 2 days.
+	* *Auto Delete* - use your company's standards.
 
 #### Job Details <a name="JobDetails"></a>
 * Job Name "Keep Schedule Open"
