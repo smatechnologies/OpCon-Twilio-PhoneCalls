@@ -36,20 +36,20 @@ These notifications will be managed by an OpCon Schedule with on-demand multi-in
 An OpCon Schedule will be built to manage the phone alerts. There will be a minimum two Jobs in this Schedule (additional configuration is required to set up escalating calls).
 
 #### Schedule Details <a name="ScheduleDetails"></a>
-* Schedule Name "OnCall Alerts"
+* ***Schedule Name*** "OnCall Alerts"
 	* **Start Time** 00:00
-	* Mark all days in the *Workays per Week*
-	* Uncheck *Use Master Holiday*
-	* *Auto Build* 0 days in advance for 2 days.
-	* *Auto Delete* - use your company's standards.
+	* Mark all days in the **Workays per Week**
+	* Uncheck **Use Master Holiday**
+	* **Auto Build** 0 days in advance for 2 days.
+	* **Auto Delete** - use your company's standards.
 
 #### Job Details <a name="JobDetails"></a>
-* Job Name "Keep Schedule Open"
+* ***Job Name*** "Keep Schedule Open"
 	* Null Job Type
 	* Frequency - select a Frequency which allows the Job to run every day of the year.
 	* Start Offset - 24:00
 	* This Job make sure the Schedule is built every day and the Schedule is open allowing on-demand Jobs to be added.
-* Job Name "Call Level One"
+* ***Job Name*** "Call Level One"
 	* Windows Job Type
 	* Check the Allow Multi-Instance checkbox
 	* Select a Primary Machine which supported Embedded Scripts
