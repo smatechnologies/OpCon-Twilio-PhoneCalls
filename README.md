@@ -67,8 +67,8 @@ An OpCon Schedule will be built to manage the phone alerts. There will be a mini
 *
 	* **Frequency** an OnRequest frequency which will only be built when called by an event
 	* **Run Interval** (these settings should be customized based on your preference)
-		* Minutes from *Start to Start* 15
-		* *Number of Runs* 5
+		* Minutes from **Start to Start** 15
+		* **Number of Runs** 5
 
 #### Notification Manager Details <a name="NotificationDetails"></a>
 OpCon's Notification Manager does not come with a phone call option. For this solution to work you need to use the "Send OpCon/xps Event" notification type adding the "Call Level One" Job to the "OnCall Alerts" Schedule. 
